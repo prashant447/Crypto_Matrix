@@ -1,0 +1,155 @@
+.container-home{
+
+  height: 100vh!important;
+  
+ background-image: url('../assets//5.jpg');
+ background-size: cover;
+   padding: 2rem 0;
+
+
+    .home{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 1rem;
+           gap: 4rem;
+        .right{
+
+          
+            .right-p{
+                color: white;
+                font-weight: 400;
+                padding-bottom: 1.5rem;
+            }
+        }
+    
+        .right-h{
+            color: white;
+            font-size: 2rem;
+            padding: 0.3rem 0;
+            font-weight: 700;
+        }
+    
+         button{
+            color: black;
+            font-size: 1.5rem;
+            padding: 0.5rem 2rem;
+            border: none;
+            background-color: white;
+            border-radius: 0.5rem;
+            transition: all 0.5s;
+            &:hover{
+                background-color: rgb(209, 206, 206);
+               
+                border: 2px solid white;
+            }
+        }
+        
+    
+        img{
+            width: 500px;
+            object-fit: contain;
+            animation: bitcoin 2s linear infinite alternate-reverse;
+
+            &:hover{
+                cursor: pointer;
+                @keyframes bitcoin {
+                    0%{
+                    transform: translateY(20px);
+                    }
+
+                    100%{
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:800px){
+    .home{
+        flex-direction: column-reverse;
+        display: block;
+    }
+
+    
+
+   
+}
+
+
+
+
+// footer
+.container-footer{
+    //  
+    
+    
+        
+    background-color: #000321;
+
+    .footer{
+       display: grid;
+       grid-template-columns: 5fr 4fr;        
+        padding: 1.7rem;
+        gap: 4rem;
+        padding: 1.5rem 0;
+        img{
+            width: 250px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+           
+        }
+         
+
+      h2{
+           
+            span{
+                font-size: 1rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .footer-para{
+            font-size: 0.9rem;
+            color: white;
+            font-weight: 300;
+        
+        }
+    }
+      
+   
+}
+@media only screen and (max-width:830px){
+    .footer{
+        display: block!important;
+       
+
+    }
+    .container-home .home img {
+        width: 400px;
+       
+    }
+}
+
+
+@media only screen and (max-width:530px){
+    .header {
+        display: block;
+        // margin: auto!important;
+        text-align: center;
+        
+    }
+}
+
+
+
+
